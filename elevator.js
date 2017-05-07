@@ -10,10 +10,11 @@ class Elevator extends EventEmitter {
 
 	loadPassenger(passenger) {
 		if (this.currentPassenger) {
-			console.error("Passenger " + passenger.name + "is occupying the elevator!");
+			//console.error("Passenger " + this.currentPassenger.name + " is occupying the elevator!");
 			return;
 		}
 		this.currentPassenger = passenger;
+		//console.log("ADDED", passenger.name);
 	}
 
 	unloadPassenger() {
