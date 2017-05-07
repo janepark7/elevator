@@ -46,7 +46,7 @@ elevator.on("down", function(event) {
         elevator.goUp();
     }
 
-    if (passengers.length === 0) {
+    if (passengers.length === 0 && event.currentFloor === 0) {
         console.log("Elevator is ready");
     }
 });
